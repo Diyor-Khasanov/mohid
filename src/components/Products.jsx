@@ -29,26 +29,31 @@ export default function Product() {
   if (error) return <p className="px-20px">Error: {error.message}</p>;
 
   return (
-    <div className="flex justify-around px-20 gap-5 max-h-[300px]">
-      {watches.map((w, idx) => (
-        <div
-          key={idx}
-          className="border border-gray-300 rounded p-4 text-center"
-        >
-          <img
-            src={w.img}
-            alt={w.name}
-            className="w-full h-9/12 object-cover"
-          />
-          <h3 className="font-semibold text-xl">{w.name}</h3>
-          <p className="flex gap-2 items-center text-center justify-center">
-            <FaStar /> {w.stars}
-          </p>
-          <p className="flex items-center justify-center gap-4">
-            <s className="text-gray-500">${w.oldPrice}</s> <strong className="text-xl">${w.newPrice}</strong>
-          </p>
-        </div>
-      ))}
-    </div>
+    <>
+      <p className="text-blue-600 text-center text-lg">Find Your Favourite Smart Watch</p>
+      <h1 className="text-center text-5xl mb-4 font-semibold">Our Latest Products</h1>
+      <div className="flex justify-around px-20 gap-5 max-h-[300px] my-6">
+        {watches.map((w, idx) => (
+          <div
+            key={idx}
+            className="border border-gray-300 rounded p-4 text-center"
+          >
+            <img
+              src={w.img}
+              alt={w.name}
+              className="w-full h-9/12 object-cover rounded"
+            />
+            <h3 className="font-semibold text-xl">{w.name}</h3>
+            <p className="flex gap-2 items-center text-center justify-center">
+              <FaStar /> {w.stars}
+            </p>
+            <p className="flex items-center justify-center gap-4">
+              <s className="text-gray-500">${w.oldPrice}</s>{" "}
+              <strong className="text-xl">${w.newPrice}</strong>
+            </p>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }

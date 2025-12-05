@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Categories from './components/Categories'
 import Products from './components/Products'
+import About from './components/About'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Home />
       <Categories />
       <Products />
+      <About />
     </React.Fragment>
   )
 }

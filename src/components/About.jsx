@@ -4,7 +4,7 @@ import About2 from "../assets/about2.png";
 
 const About = () => {
   return (
-    <div>
+    <div className="my-30">
       <p className="text-blue-600 text-center text-lg">
         Here are our some of the best clients.
       </p>
@@ -12,7 +12,7 @@ const About = () => {
         What People Say About Us
       </h1>
 
-      <div className="flex justify-around my-15">
+      <div className="flex justify-evenly my-10">
         <div className="flex p-6 bg-gray-100 rounded-xl max-w-[600px] gap-4">
           <img src={About1} alt="Category 1" />
           <div>

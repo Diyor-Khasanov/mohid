@@ -13,7 +13,7 @@ const Home = () => {
           product quality. Here you can find smart watches of almost all brands.
           So why you are waiting? Just order now!
         </p>
-        <form className="flex gap-2 text-lg font-semibold">
+        <form className="flex gap-2 text-lg font-normal">
           <input type="text" placeholder="Find the best brands" className="bg-white text-black px-4 py-2 rounded-lg" />
           <button className="text-white bg-blue-600 px-6 py-2 rounded">Search</button>
         </form>

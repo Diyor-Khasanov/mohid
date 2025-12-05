@@ -29,7 +29,7 @@ export default function Product() {
   if (error) return <p className="px-20px">Error: {error.message}</p>;
 
   return (
-    <>
+    <div className="my-30">
       <p className="text-blue-600 text-center text-lg">Find Your Favourite Smart Watch</p>
       <h1 className="text-center text-5xl mb-4 font-semibold">Our Latest Products</h1>
       <div className="flex justify-around px-20 gap-5 max-h-[300px] my-6">
@@ -54,6 +54,6 @@ export default function Product() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }

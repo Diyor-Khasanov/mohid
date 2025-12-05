@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Categories from './components/Categories'
 import Products from './components/Products'
 import About from './components/About'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Categories />
       <Products />
       <About />
+      <Contact />
     </React.Fragment>
   )
 }

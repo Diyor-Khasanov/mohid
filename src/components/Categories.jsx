@@ -5,7 +5,7 @@ import Category3 from '../assets/category-3.png'
 
 const Categories = () => {
   return (
-    <div className='flex justify-around my-15'>
+    <div className='flex justify-around my-30'>
       <div className='flex p-6 bg-gray-100 rounded-xl max-w-[400px] gap-4'>
         <img src={Category1} alt="Category 1" />
         <div>

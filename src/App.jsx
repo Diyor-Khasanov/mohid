@@ -1,12 +1,12 @@
 import React from 'react'
-// import Home from './components/Home'
 import Navbar from './components/Navbar'
+import Home from './components/Home'
 
 const App = () => {
   return (
     <React.Fragment>
       <Navbar />
-      {/* <Home /> */}
+      <Home />
     </React.Fragment>
   )
 }
